@@ -3,7 +3,7 @@
 Простое веб-приложение на go которое выводит локальные переменные и переменные окружения, упакованное в Docker контейнер.
 # Возможности
 - Вывод локальной переменной
-- Вывод переменной окружения `MY_VAR`
+- Вывод локальной переменной `MY_VAR`
 - Настройка порта через переменную окружения `PORT`
 - Docker контейнер с минимальным образом
 
@@ -18,8 +18,8 @@
 
 # Запуск в докер
 
--docker build -t go-web-app .
+-docker build -t docker_go .
 
--docker run -d -p 8080:8080 -e MY_VAR="Hello from Docker!" --name myapp go-web-app
+-docker run -d -p 8080:8080 -e MY_VAR="Hello from Docker!" --name myapp docker_go
 # Проверка работы
 -curl http://localhost:8080
