@@ -25,7 +25,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker_go:dev
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker_go:stage
           build-args: MY_VAR=${{ env.MY_VAR }}
 
 
