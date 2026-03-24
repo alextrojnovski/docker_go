@@ -1,4 +1,4 @@
-ame: Stage Pipeline
+name: Stage Pipeline
 
 on:
   push:
