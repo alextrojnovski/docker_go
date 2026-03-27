@@ -1,25 +1,25 @@
 ## go web application
 
-Простое веб-приложение на go которое выводит локальные переменные и переменные окружения, упакованное в Docker контейнер.
-# Возможности
-- Вывод локальной переменной
-- Вывод локальной переменной `MY_VAR`
-- Настройка порта через переменную окружения `PORT`
-- Docker контейнер с минимальным образом
+A simple go web application that displays local and environment variables, packaged in a Docker container.
+# Abilities
+- Local variable output `MY_VAR`
+- Output of the environment variable
+- Configuring a port via an environment variable `PORT`
+- Docker container with minimal image
 
-Для запуска приложения вам понадобится:
-- Go 1.21 или выше
+To run the app u'll need:
+- Go 1.21 or upper
 - Git
-- Docker 20.10 или выше
-# Клонирование репозитория
+- Docker 20.10 or upper
+# Cloning repository
 -git clone https://github.com/alextrojnovski/docker_go
 
 -cd docker_go
 
-# Запуск в докер
+# Start in docker
 
 -docker build -t docker_go .
 
 -docker run -d -p 8080:8080 -e MY_VAR="Hello from Docker!" --name myapp docker_go
-# Проверка работы
+# Funcional check
 -curl http://localhost:8080
